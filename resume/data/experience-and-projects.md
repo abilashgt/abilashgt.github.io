@@ -1,72 +1,4 @@
-# Abilash George Thomas
-
-- LinkedIn: www.linkedin.com/in/abilashgt
-- Email: abilashgeorgethomas@gmail.com
-- Phone: +1 925-364-1810
-- Date: Mar 6, 2026
-
-## Personal
-- Age: 37
-- Location: Sunnyvale, California, USA
-- US Visa Type: H1B
-
-## Education
-- Computer Science and Engineering | Bachelor of Technology | Mahatma Gandhi University | 2006 – 2010 | Kerala, India
-
-## Objective
-- Build and maintain large-scale data infrastructure and backend systems for ingestion, transformation, and serving, with strong ownership of reliability, performance, and production operations.
-## Summary
-- Software engineer with 14 years of experience building and operating distributed data platforms processing large-scale datasets across diverse products and users.
-- Strong programming foundation in Python, Java, and Scala, with hands-on ownership of observability, CI/CD automation, incident response, and long-term reliability improvements.
-
-## Achievements
-
-- Designed and delivered roadmap-aligned data platform features and backend
-services for customer-facing enterprise platforms.
-- Built highly available ingestion connectors for distributed sources including
-queues, REST services, and database oplogs.
-- Developed large-scale streaming and batch ETL applications using Apache
-Kafka, Apache Spark, and Apache Hadoop.
-- Modeled distributed data processing flows and implemented transformation and
-compaction strategies to improve quality, cost, and maintainability.
-- Delivered data-intensive applications using MySQL and NoSQL systems,
-including DynamoDB, Redis, MongoDB, and Elasticsearch, with strong data modeling and access patterns.
-- Designed and built backend services, RESTful APIs, and GraphQL interfaces
-using clear API design principles and reusable components.
-- Built reliable cloud-native solutions on Amazon AWS and GCP with
-containerized deployments and CI/CD best practices.
-- Collaborated with architects, product managers, and cross-functional teams to
-translate requirements into technical designs, triage production issues, and drive root cause analysis.
-- Demonstrated strong ownership, clear communication, and rapid learning across
-dynamic teams while driving practical execution and measurable platform quality improvements.
-- Familiarity with using AI tools to accelerate efficiency in coding.
-
-## Skills
-
-**Coding Languages:**
-- Java (Java EE)
-- Python, Scala
-- HTML, JavaScript
-**Frameworks / Platforms:**
-- Spring, Spring MVC, Spring Boot, Hibernate
-- Big Data – Apache Spark, Apache Hadoop, Apache Kafka, Apache Iceberg, Akka
-- Distributed Systems, Microservices, RESTful API design principles, multithreading, caching strategies, GraphQL
-**Databases:**
-- NoSQL – MongoDB
-- SQL – MySQL, PostgreSQL, Oracle
-- Big Data Storage – Hive, Parquet
-**Cloud Platforms:**
-- Amazon AWS, Google GCP
-**DevOps:**
-- Linux / Unix
-- Docker, Kubernetes
-- Shell scripting, Ansible, CI/CD, test automation, containerization, cloud-native deployments
-**Others:**
-- Agile delivery, technical leadership, mentoring, and performance optimization
-- APM/Monitoring: Prometheus, Splunk
-- AI: Claude, OpenAI Codex
-
-## Experience And Projects
+# Experience And Projects
 
 ### Apple (Contract) — Big Data/Cloud Software Engineer
 
@@ -116,6 +48,7 @@ by more than 50% and block count (indexing) by more than 90%.
 - Collaborated with data scientists to productionize model inputs and resolve engineering gaps outside core team scope.
 - Deployed services on AWS and Apple Cloud through CI/CD pipelines, using cloud-native patterns and automated
 release controls.
+
 ### Pacific Gas and Electric Company (Contract) — Software Design Engineer
 
 : 2018 – 2019 (1 ), : , Date FEB JAN year Location San Ramon CA PG&E is a California utilities company that provides gas and electricity across the Bay Area.
@@ -128,6 +61,7 @@ release controls.
 - Conducting and analyzing disaster recovery.
 - R&D to improve the existing system.
 - Built automated responses using the Amazon Lex cloud platform.
+
 ### TATA Consultancy Services (TCS) Ltd — I.T. Analyst
 
 **: 2015 – 2018 (3 ), : , Date JAN JAN years Location Kochi India Projects:**
@@ -148,6 +82,7 @@ equipment) was analyzed for anomaly detection. FLSmidth: Project for a major mac
 - Integrated the big data ecosystem with IoT platforms using IoT-specific protocols such as MQTT.
 - Developed RESTful web services for data visualization with OAuth 2.0 authentication and security.
 - Integrated Hibernate ORM with the Spring framework for enterprise backend services.
+
 ### HIFX Learning Service Pvt Ltd — Senior Software Engineer
 
 : 2011 - 2014 (3 ), : , Date DEC NOV years Location Kochi India
