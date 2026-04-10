@@ -44,3 +44,13 @@ CREATE TABLE education (
   year TEXT
 );
 ```
+
+## achievements
+```sql
+CREATE TABLE achievements (
+  id INTEGER PRIMARY KEY,
+  version_id INTEGER,
+  sort_order INTEGER,
+  achievement TEXT
+);
+```
