@@ -9,7 +9,8 @@
 ### (Discord)
 - Age: 37
 - Location: Sunnyvale, California, USA
-- US Visa Type: H1B
+- Visa: US H1B
+- Citizenship: India
 
 ## Education
 ### (Discord)
