@@ -1,4 +1,5 @@
 # Skills
+### Discord
 
 **Coding Languages:**
 - Java (Java EE)
