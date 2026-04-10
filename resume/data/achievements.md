@@ -1,5 +1,5 @@
 # Achievements
-
+### (Version: Discord)
 - Designed and delivered roadmap-aligned data platform features and backend
 services for customer-facing enterprise platforms.
 - Built highly available ingestion connectors for distributed sources including

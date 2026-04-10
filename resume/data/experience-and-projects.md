@@ -6,7 +6,7 @@
 - Locations: Sunnyvale CA, Culver City CA 
 - Description: Apple is one of the largest technology companies in the world, with vast data resources and software engineering teams.
 
-### (Discord)
+### (Version: Discord)
 **Project 1: Apple Online Store**
 - Description: Developed APIs for the Apple Online Store.
 - Domain: Marketing and Sales
@@ -17,7 +17,7 @@
     - Led system design and code reviews, guiding engineers through implementation and architecture tradeoffs.
     - Participated in on-call rotations, triaged customer-impacting incidents, and drove root-cause fixes to prevent recurrence.
 
-### (Discord)
+### (Version: Discord)
 **Project 2: Apple TV+**
 - Description: Developed an integration platform to connect various applications and data sources for Apple TV+.
 - Domain: Media & Entertainment
@@ -34,7 +34,7 @@
     - Led offshore team members and mentored engineers through delivery milestones.
     - Drove incident triage, post-incident RCA, and long-term performance and reliability improvements.
 
-### (Discord)
+### (Version: Discord)
 **Project 3: Machine Learning and Data Streaming Platform**
 Played an integral role in a machine learning and analytics team for customer systems. Developed a framework and toolset for data ingestion used in anomaly detection and recommendation models.
 - Domain: Customer Care
