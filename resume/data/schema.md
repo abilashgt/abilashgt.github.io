@@ -39,6 +39,7 @@ CREATE TABLE education (
   main TEXT,
   degree TEXT,
   school TEXT,
+  university TEXT,
   location TEXT,
   year TEXT
 );

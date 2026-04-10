@@ -1,17 +1,17 @@
 # Abilash George Thomas
-### (Version: Discord)
+### (Version: Default)
 - LinkedIn: www.linkedin.com/in/abilashgt
 - Email: abilashgeorgethomas@gmail.com
 - Phone: +1 925-364-1810
 - Date: Mar 6, 2026
 
 ## Personal
-### (Version: Discord)
+### (Version: Default)
 - Age: 37
 - Location: Sunnyvale, California, USA
 - Visa: US H1B
 - Citizenship: India
 
 ## Education
-### (Version: Discord)
-- Computer Science and Engineering | Bachelor of Technology | Mahatma Gandhi University | 2006 – 2010 | Kerala, India
+### (Version: Default)
+- Computer Science and Engineering | Bachelor of Technology | Mar Athanasius College of Engineering | Mahatma Gandhi University | 2006 – 2010 | Kerala, India
