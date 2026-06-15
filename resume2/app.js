@@ -190,6 +190,10 @@ async function main() {
   renderStats(data);
   renderSidebar(data);
   renderContent(data);
+
+  if (new URLSearchParams(window.location.search).get("print") === "1") {
+    setTimeout(() => window.print(), 0);
+  }
 }
 
 main().catch((error) => {
