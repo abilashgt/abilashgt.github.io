@@ -185,6 +185,10 @@ async function main() {
     renderPersonal(data.personal),
     renderProjects(data.projects)
   );
+
+  if (new URLSearchParams(window.location.search).get("print") === "1") {
+    setTimeout(() => window.print(), 0);
+  }
 }
 
 main().catch((error) => {

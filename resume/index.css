@@ -70,6 +70,32 @@ body {
   }
 }
 
+@media print {
+  body {
+    background: #fff;
+    padding-bottom: 0;
+  }
+
+  .container {
+    max-width: none;
+    margin: 0;
+    padding: 24px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .section,
+  .header {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
 
 .details {
   line-height: 20px;
@@ -160,8 +186,6 @@ body {
     }
   }
 }
-
-
 
 
 
