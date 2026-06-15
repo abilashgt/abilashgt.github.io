@@ -22,6 +22,8 @@
       }
     ]
   },
+  "birthDate": "1988-03-25",
+  "showDate": true,
   "stats": [
     {
       "value": "14+",
@@ -57,7 +59,6 @@
     "Oracle",
     "PostgreSQL",
     "MySQL",
-    "HBase",
     "Hive",
     "Parquet",
     "AWS",
@@ -77,7 +78,6 @@
     }
   ],
   "personal": [
-    "Age: 38",
     "Location: Sunnyvale, California, USA",
     "Visa: H1B",
     "Citizenship: India"

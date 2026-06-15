@@ -5,21 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Abilash George Thomas</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 40px;
+      :root {
+        --bg: #f3f6f9;
+        --panel: #ffffff;
+        --ink: #18212b;
+        --muted: #61707f;
+        --line: #d9e1e8;
+        --accent: #005fcc;
       }
-      a {
-        color: #005fcc;
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        background: radial-gradient(circle at top, #ffffff 0, var(--bg) 50%);
+        color: var(--ink);
+        font-family: Arial, sans-serif;
+        padding: 48px 20px;
+      }
+
+      .page {
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      .hero {
+        margin-bottom: 24px;
+      }
+
+      .hero h1 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.05;
+      }
+
+      .hero p {
+        margin: 10px 0 0;
+        color: var(--muted);
+        line-height: 1.6;
+        max-width: 60ch;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: 0 12px 32px rgba(16, 24, 40, 0.08);
+        padding: 22px;
+      }
+
+      .panel__title {
+        margin: 0 0 16px;
+        font-size: 0.78rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .actions {
+        display: grid;
+        gap: 14px;
+      }
+
+      .action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 18px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      .action:hover {
+        border-color: #b8c6d3;
+        box-shadow: 0 8px 18px rgba(16, 24, 40, 0.06);
+        transform: translateY(-1px);
+      }
+
+      .action__left {
+        display: grid;
+        gap: 4px;
+      }
+
+      .action__label {
+        font-size: 1.02rem;
+        font-weight: 700;
+      }
+
+      .action__meta {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .action__cta {
+        flex: none;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #fff;
+        font-size: 0.92rem;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .link-row {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .linkedin-card {
+        margin-top: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 18px;
+        border: 1px solid #c7d5e2;
+        border-radius: 14px;
+        background: linear-gradient(180deg, #f8fbff, #eef5fd);
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .linkedin-card:hover {
+        border-color: #9fb8d6;
+        box-shadow: 0 8px 18px rgba(16, 24, 40, 0.06);
+      }
+
+      .linkedin-card__left {
+        display: grid;
+        gap: 4px;
+      }
+
+      .linkedin-card__label {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      .linkedin-card__meta {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .linkedin-card__cta {
+        flex: none;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: #0a66c2;
+        color: #fff;
+        font-size: 0.92rem;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .link-row a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .link-row a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <h1>Abilash George Thomas</h1>
-    <p><a href="https://www.linkedin.com/in/abilashgt">LinkedIn</a></p>
-    <p><a href="resume/index.html?print=1" target="_blank" rel="noreferrer" style="display:inline-block;padding:10px 16px;border:1px solid #005fcc;border-radius:6px;background:#005fcc;color:#fff;text-decoration:none;">Export PDF</a></p>
-    <p><a href="resume/index.html">View Resume</a></p>
-    <p><a href="resume2/index.html?print=1" target="_blank" rel="noreferrer" style="display:inline-block;padding:10px 16px;border:1px solid #005fcc;border-radius:6px;background:#005fcc;color:#fff;text-decoration:none;">Export PDF 2</a></p>
-    <p><a href="resume2/index.html">View Resume 2</a></p>
+    <main class="page">
+      <section class="hero">
+        <h1>Abilash George Thomas</h1>
+        <p>Open the resume or export it as PDF. The page is generated from data files and opens in print mode when you use the export action.</p>
+      </section>
+
+      <section class="panel" aria-label="Resume actions">
+        <h2 class="panel__title">Resume Actions</h2>
+
+        <div class="actions">
+          <a class="action" href="resume2/index.html?print=1" target="_blank" rel="noreferrer">
+            <span class="action__left">
+              <span class="action__label">Resume 2</span>
+              <span class="action__meta">Modern two-column layout</span>
+            </span>
+            <span class="action__cta">Export PDF</span>
+          </a>
+
+          <a class="action" href="resume2/index.html">
+            <span class="action__left">
+              <span class="action__label">Resume 2</span>
+              <span class="action__meta">Open the alternate template</span>
+            </span>
+            <span class="action__cta" style="background:#263444;">View</span>
+          </a>
+        </div>
+
+        <a class="linkedin-card" href="https://www.linkedin.com/in/abilashgt" target="_blank" rel="noreferrer">
+          <span class="linkedin-card__left">
+            <span class="linkedin-card__label">LinkedIn</span>
+            <span class="linkedin-card__meta">View the profile and connect</span>
+          </span>
+          <span class="linkedin-card__cta">Open Profile</span>
+        </a>
+      </section>
+    </main>
   </body>
 </html>

@@ -18,14 +18,27 @@ function appendTextBlock(parent, text, tag = "p", className = "") {
 }
 
 function contactLink(item) {
+  const text = item.label || item.value;
+  if (!item.href) {
+    return el("span", "", text);
+  }
+
   const link = el("a");
-  link.textContent = item.label || item.value;
-  link.href = item.href || "#";
+  link.textContent = text;
+  link.href = item.href;
   if (item.external) {
     link.target = "_blank";
     link.rel = "noreferrer";
   }
   return link;
+}
+
+function formatCurrentDate() {
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  }).format(new Date());
 }
 
 function renderHero(data) {
@@ -39,7 +52,20 @@ function renderHero(data) {
 
   const contact = el("aside", "hero__contact");
   contact.setAttribute("aria-label", "Contact information");
-  data.hero.contact.forEach((item) => contact.appendChild(contactLink(item)));
+  let dateInserted = false;
+  data.hero.contact.forEach((item) => {
+    if (!dateInserted && data.showDate !== false && item.label && item.label.includes("linkedin.com")) {
+      contact.appendChild(el("span", "", `Date: ${formatCurrentDate()}`));
+      dateInserted = true;
+    }
+    contact.appendChild(contactLink(item));
+  });
+  if (data.showDate !== false) {
+    // If no LinkedIn entry exists, keep the date visible at the end.
+    if (!dateInserted) {
+      contact.appendChild(el("span", "", `Date: ${formatCurrentDate()}`));
+    }
+  }
 
   hero.append(identity, contact);
 }
@@ -90,13 +116,54 @@ function renderListSection(title, items, parent, options = {}) {
   parent.appendChild(card);
 }
 
+function calculateAge(birthDateString) {
+  if (!birthDateString) {
+    return null;
+  }
+
+  const birthDate = new Date(`${birthDateString}T00:00:00`);
+  if (Number.isNaN(birthDate.getTime())) {
+    return null;
+  }
+
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDelta = today.getMonth() - birthDate.getMonth();
+  if (monthDelta < 0 || (monthDelta === 0 && today.getDate() < birthDate.getDate())) {
+    age -= 1;
+  }
+
+  return age;
+}
+
+function renderPersonal(data) {
+  const card = el("section", "card");
+  appendTextBlock(card, "Personal", "h2");
+
+  const list = el("div", "section__list");
+  const age = calculateAge(data.birthDate);
+  if (age !== null) {
+    const ageRow = el("div", "section__list-item");
+    ageRow.append(el("div", "text", `Age: ${age}`));
+    list.appendChild(ageRow);
+  }
+
+  const personalText = data.personal.join(" - ");
+  const row = el("div", "section__list-item");
+  row.append(el("div", "text", personalText));
+  list.appendChild(row);
+  card.appendChild(list);
+
+  return card;
+}
+
 function renderSidebar(data) {
   const sidebar = document.getElementById("sidebar");
   sidebar.replaceChildren();
 
   renderListSection("Skills", data.skills, sidebar, { type: "chips" });
   renderListSection("Education", data.education, sidebar);
-  renderListSection("Personal", data.personal, sidebar, { type: "lines" });
+  sidebar.appendChild(renderPersonal(data));
   renderListSection("Achievements", data.achievements, sidebar, { type: "bullets", tight: true });
 }
 
