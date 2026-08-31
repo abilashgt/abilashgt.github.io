@@ -13,7 +13,7 @@
         "href": "tel:+19253641810"
       },
       {
-        "label": "Sunnyvale, California, USA"
+        "label": "San Francisco Bay Area, CA, USA"
       },
       {
         "label": "linkedin.com/in/abilashgt",
@@ -78,9 +78,9 @@
     }
   ],
   "personal": [
-    "Location: Sunnyvale, California, USA",
+    "Location: San Francisco Bay Area, CA, USA",
     "Visa: H1B",
-    "Citizenship: India"
+    "(Citizenship: India)"
   ],
   "achievements": [
     "Built data platforms and lakes for real-time and batch processing.",

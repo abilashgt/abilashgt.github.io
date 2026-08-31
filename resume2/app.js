@@ -138,7 +138,7 @@ function calculateAge(birthDateString) {
 
 function renderPersonal(data) {
   const card = el("section", "card");
-  appendTextBlock(card, "Personal", "h2");
+  appendTextBlock(card, "Work Authorization", "h2");
 
   const list = el("div", "section__list");
   const age = calculateAge(data.birthDate);
@@ -148,7 +148,7 @@ function renderPersonal(data) {
     list.appendChild(ageRow);
   }
 
-  const personalText = data.personal.join(" - ");
+  const personalText = data.personal.join(" ; ");
   const row = el("div", "section__list-item");
   row.append(el("div", "text", personalText));
   list.appendChild(row);
