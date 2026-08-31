@@ -30,16 +30,16 @@
       "label": "Years experience"
     },
     {
-      "value": "Big Data",
-      "label": "Streaming and batch systems"
-    },
-    {
       "value": "APIs",
       "label": "REST and GraphQL delivery"
     },
     {
       "value": "Cloud",
       "label": "AWS, GCP, Docker, Kubernetes"
+    },
+    {
+      "value": "Big Data",
+      "label": "Streaming and batch systems"
     }
   ],
   "skills": [
