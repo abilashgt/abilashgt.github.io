@@ -116,55 +116,12 @@ function renderListSection(title, items, parent, options = {}) {
   parent.appendChild(card);
 }
 
-function calculateAge(birthDateString) {
-  if (!birthDateString) {
-    return null;
-  }
-
-  const birthDate = new Date(`${birthDateString}T00:00:00`);
-  if (Number.isNaN(birthDate.getTime())) {
-    return null;
-  }
-
-  const today = new Date();
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const monthDelta = today.getMonth() - birthDate.getMonth();
-  if (monthDelta < 0 || (monthDelta === 0 && today.getDate() < birthDate.getDate())) {
-    age -= 1;
-  }
-
-  return age;
-}
-
-function renderPersonal(data) {
-  const card = el("section", "card");
-  appendTextBlock(card, "Work Authorization", "h2");
-
-  const list = el("div", "section__list");
-  const age = calculateAge(data.birthDate);
-  if (age !== null) {
-    const ageRow = el("div", "section__list-item");
-    ageRow.append(el("div", "text", `Age: ${age}`));
-    list.appendChild(ageRow);
-  }
-
-  const personalText = data.personal.join(" ; ");
-  const row = el("div", "section__list-item");
-  row.append(el("div", "text", personalText));
-  list.appendChild(row);
-  card.appendChild(list);
-
-  return card;
-}
-
 function renderSidebar(data) {
   const sidebar = document.getElementById("sidebar");
   sidebar.replaceChildren();
 
   renderListSection("Skills", data.skills, sidebar, { type: "chips" });
   renderListSection("Education", data.education, sidebar);
-  sidebar.appendChild(renderPersonal(data));
-  renderListSection("Achievements", data.achievements, sidebar, { type: "bullets", tight: true });
 }
 
 function renderExperienceSection(data, parent) {
@@ -214,7 +171,10 @@ function renderContent(data) {
   content.replaceChildren();
 
   renderExperienceSection(data, content);
-  renderProjectsSection(data, content);
+
+  const projectsPage = document.getElementById("projects-page");
+  projectsPage.replaceChildren();
+  renderProjectsSection(data, projectsPage);
 }
 
 function applyMetadata(data) {

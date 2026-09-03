@@ -129,7 +129,7 @@ h1 {
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
   border-top: 0;
-  border-radius: 0 0 24px 24px;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -141,6 +141,19 @@ h1 {
 
 .content {
   padding: 24px;
+}
+
+.projects-page {
+  padding: 24px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 0;
+  border-radius: 0 0 24px 24px;
+  box-shadow: var(--shadow);
+}
+
+.projects-page > .card {
+  margin: 0;
 }
 
 .card + .card {
@@ -297,12 +310,20 @@ h3 {
 }
 
 @media print {
+  @page {
+    size: Letter;
+    margin: 0.25in;
+  }
+
   body {
     background: #fff;
+    font-size: 10pt;
+    line-height: 1.35;
   }
 
   .resume {
     max-width: none;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -310,13 +331,129 @@ h3 {
   .hero,
   .stats,
   .layout,
+  .projects-page,
   .card {
     box-shadow: none;
   }
 
   .hero,
-  .layout {
+  .layout,
+  .projects-page {
     border-radius: 0;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr) 230px;
+    gap: 16px;
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 2.65rem;
+  }
+
+  .summary {
+    margin-top: 8px;
+    font-size: 0.84rem;
+  }
+
+  .hero__contact {
+    gap: 5px;
+    padding: 9px;
+    font-size: 0.76rem;
+  }
+
+  .stat {
+    padding: 8px 12px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .stat__value {
+    font-size: 1rem;
+  }
+
+  .stat__label {
+    font-size: 0.78rem;
+  }
+
+  .layout {
+    grid-template-columns: 235px minmax(0, 1fr);
+    overflow: visible;
+  }
+
+  .sidebar,
+  .content {
+    padding: 10px;
+  }
+
+  .projects-page {
+    padding: 10px;
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .card {
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .card--primary {
+    padding: 14px;
+  }
+
+  h2 {
+    margin-bottom: 8px;
+    font-size: 0.78rem;
+  }
+
+  h3 {
+    font-size: 0.92rem;
+  }
+
+  .meta {
+    margin-top: 2px;
+    font-size: 0.82rem;
+  }
+
+  .entry + .entry {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .entry--compact + .entry--compact {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .entry--compact p {
+    margin-top: 4px;
+    font-size: 0.86rem;
+  }
+
+  .bullets {
+    margin-top: 6px;
+    padding-left: 15px;
+    font-size: 0.86rem;
+  }
+
+  .bullets li + li {
+    margin-top: 3px;
+  }
+
+  .chips {
+    gap: 6px;
+  }
+
+  .chips li {
+    padding: 5px 8px;
+    font-size: 0.78rem;
+  }
+
+  .mini-entry p {
+    font-size: 0.86rem;
   }
 
   .hero__contact a {
@@ -326,6 +463,7 @@ h3 {
   .hero,
   .stats,
   .layout,
+  .projects-page,
   .card {
     break-inside: avoid;
     page-break-inside: avoid;
