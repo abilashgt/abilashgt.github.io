@@ -159,7 +159,14 @@ function renderProjectsSection(data, parent) {
   data.projects.forEach((item) => {
     const entry = el("article", "entry entry--compact");
     appendTextBlock(entry, item.title, "h3");
-    appendTextBlock(entry, item.description);
+    const bullets = el("ul", "bullets");
+    const descriptions = Array.isArray(item.description) ? item.description : [item.description];
+    descriptions.forEach((description) => {
+      const bullet = el("li");
+      bullet.textContent = description;
+      bullets.appendChild(bullet);
+    });
+    entry.appendChild(bullets);
     card.appendChild(entry);
   });
 
@@ -173,8 +180,12 @@ function renderContent(data) {
   renderExperienceSection(data, content);
 
   const projectsPage = document.getElementById("projects-page");
-  projectsPage.replaceChildren();
-  renderProjectsSection(data, projectsPage);
+  if (projectsPage) {
+    projectsPage.replaceChildren();
+    renderProjectsSection(data, projectsPage);
+  } else {
+    renderProjectsSection(data, content);
+  }
 }
 
 function applyMetadata(data) {

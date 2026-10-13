@@ -125,27 +125,54 @@
   "projects": [
     {
       "title": "Apple Online Store",
-      "description": "Developed and supported scalable, secure RESTful APIs for Apple Online Store marketing and sales workflows using Java, Spring Boot, and Spring MVC. Integrated backend services with partner modules, led design and code reviews, and handled on-call incidents and root-cause fixes."
+      "description": [
+        "Architected and implemented scalable, secure RESTful APIs for Apple Online Store marketing and sales workflows, including MacBook, iPhone, and iPad purchase flows, using Java and Spring MVC.",
+        "Integrated backend services with partner business modules and cross-functional systems; led design and code reviews and guided engineers through architecture tradeoffs.",
+        "Delivered new, unreleased product flows end to end, from design and implementation through testing and deployment.",
+        "Owned on-call support for customer-impacting services, drove incident triage and root-cause fixes, and improved production reliability."
+      ]
     },
     {
       "title": "Apple TV+",
-      "description": "Built GraphQL and REST APIs for an integration platform connecting Apple TV+ media data sources across ingestion, transformation, and serving workflows. Designed data flows, developed Retool UI tooling, and built CI/CD pipelines with automated tests and containerized deployments in GCP while collaborating with product and data teams."
+      "description": [
+        "Built and maintained GraphQL and REST APIs with Java, Spring Boot, Kafka, and PostgreSQL for a distributed integration platform connecting Apple TV+ applications and data sources.",
+        "Owned end-to-end ingestion, transformation, and serving data flows and developed Retool UI tooling for rapid operational workflows and business coordination.",
+        "Worked with Title and Talent data associated with show production and media content operations.",
+        "Created a unified, centralized view of data that improved collaboration across pre-production, finance, distribution, and related departments.",
+        "Built CI/CD pipelines with automated tests and containerized GCP deployments; mentored engineers and drove incident RCA, performance, and reliability improvements."
+      ]
     },
     {
-      "title": "Machine Learning and Data Streaming Platform",
-      "description": "Developed Java, Scala, and Python streaming and ingestion frameworks for anomaly detection and recommendation systems using Spark, Akka, Kafka, and Apache Iceberg. Added observability and operational tooling for a platform processing more than 700 TB annually; compaction reduced data volume by 50%+ and block count by 90%+."
+      "title": "Apple Machine Learning and Data Streaming Platform",
+      "description": [
+        "Developed Java, Scala, and Python streaming and ingestion frameworks for anomaly detection and recommendation systems using Spark, Akka, Kafka, and Apache Iceberg.",
+        "Built ETL pipelines for streaming and non-streaming sources and added Prometheus, Grafana, and ELK-style monitoring, logging, and alerting.",
+        "Supported more than 700 TB annually and Kafka workloads up to 200 records per second per node; compaction reduced data volume by 50%+ and block count by 90%+."
+      ]
     },
     {
       "title": "PG&E Field Maintenance Applications",
-      "description": "Maintained Microsoft .NET field maintenance applications in a production utilities environment. Led on-call support, outage response, customer issue triage, root-cause fixes, and disaster-recovery analysis, and built automated responses using Amazon Lex."
+      "description": [
+        "Maintained Microsoft .NET and batch-script field maintenance applications in a production utilities environment.",
+        "Led on-call support, outage response, customer issue triage, root-cause fixes, disaster-recovery analysis, and system improvements.",
+        "Built automated responses using Amazon Lex to improve operational support workflows."
+      ]
     },
     {
       "title": "TCS Analytics Programs",
-      "description": "Built Spark and Hadoop analytics platforms and real-time or batch ETL pipelines for Voltas, FLSmidth, Nielsen, and Allianz UK. Delivered data modeling, transformation, anomaly detection with PySpark, Hive UDFs and UDAFs, IoT integrations over MQTT, and OAuth 2.0-secured REST services."
+      "description": [
+        "Built Java, Scala, and Python analytics platforms and real-time or batch ETL pipelines with Spark, Hadoop, Kafka, and Spring MVC for Voltas, FLSmidth, Nielsen, and Allianz UK.",
+        "Delivered data modeling, transformation, PySpark anomaly detection, reusable Hive UDFs and UDAFs, and migrated Hive and MapReduce workloads to Spark.",
+        "Integrated IoT data over MQTT and developed OAuth 2.0-secured REST services for reporting and visualization."
+      ]
     },
     {
       "title": "Tagbond Platform (VTC)",
-      "description": "Led end-to-end AWS development of Tagbond, a rewards and digital payments platform for VTC online training services. Designed scalable data flows and SQL/NoSQL schemas, built OAuth 2.0 REST services and mobile integrations, coordinated teams in India and the Philippines, and supported the platform after release."
+      "description": [
+        "Led end-to-end AWS development of Tagbond, a rewards and digital payments platform for VTC online training services using Java, Spring, PHP, HTML, and JavaScript.",
+        "Designed scalable data flows and MySQL/MongoDB schemas, and built OAuth 2.0 REST services with Android and iOS integrations.",
+        "Coordinated delivery across teams in India and the Philippines, built the platform from the ground up, and supported it after release."
+      ]
     }
   ]
 }
