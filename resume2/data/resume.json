@@ -130,6 +130,7 @@
         "Integrated backend services with partner business modules and cross-functional systems; led design and code reviews and guided engineers through architecture tradeoffs.",
         "Delivered new, unreleased product flows end to end, from design and implementation through testing and deployment.",
         "Collaborated with business stakeholders to evaluate solution options, clarify requirements, and identify edge cases before implementation.",
+        "Used Claude and other AI-assisted engineering tools to support coding, documentation, GitHub workflows, deployments, and ticket tracking.",
         "Owned on-call support for customer-impacting services, drove incident triage and root-cause fixes, and improved production reliability."
       ]
     },
@@ -173,6 +174,8 @@
       "description": [
         "Led end-to-end AWS development of Tagbond, a rewards and digital payments platform for VTC online training services using Java, Spring, PHP, HTML, and JavaScript.",
         "Designed scalable data flows and MySQL/MongoDB schemas, and built OAuth 2.0 REST services with Android and iOS integrations.",
+        "Worked across the full stack on frontend and backend development and contributed to the platform's architectural design.",
+        "Traveled to the Philippines to collaborate with business stakeholders and support onsite implementation.",
         "Coordinated delivery across teams in India and the Philippines, built the platform from the ground up, and supported it after release."
       ]
     }
