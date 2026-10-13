@@ -129,6 +129,7 @@
         "Architected and implemented scalable, secure RESTful APIs for Apple Online Store marketing and sales workflows, including MacBook, iPhone, and iPad purchase flows, using Java and Spring MVC.",
         "Integrated backend services with partner business modules and cross-functional systems; led design and code reviews and guided engineers through architecture tradeoffs.",
         "Delivered new, unreleased product flows end to end, from design and implementation through testing and deployment.",
+        "Collaborated with business stakeholders to evaluate solution options, clarify requirements, and identify edge cases before implementation.",
         "Owned on-call support for customer-impacting services, drove incident triage and root-cause fixes, and improved production reliability."
       ]
     },
@@ -139,6 +140,7 @@
         "Owned end-to-end ingestion, transformation, and serving data flows and developed Retool UI tooling for rapid operational workflows and business coordination.",
         "Worked with Title and Talent data associated with show production and media content operations.",
         "Created a unified, centralized view of data that improved collaboration across pre-production, finance, distribution, and related departments.",
+        "Integrated Apple's custom authentication and security systems into the platform to support secure access and data workflows.",
         "Built CI/CD pipelines with automated tests and containerized GCP deployments; mentored engineers and drove incident RCA, performance, and reliability improvements."
       ]
     },
