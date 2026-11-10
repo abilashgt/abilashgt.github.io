@@ -56,12 +56,14 @@ function renderHero(data) {
   const emailVariant = params.get("email") === "tcs"
     ? "tcs"
     : "default";
-  const phoneVariant = params.get("phone") === "usa" ? "usa" : "default";
+  const phoneParam = params.get("phone");
+  const phoneVariant = phoneParam === "usa" ? "usa" : "default";
+  const showAllPhones = phoneParam === "all";
   let dateInserted = false;
   data.hero.contact
     .filter((item) =>
       (item.type !== "email" || item.variant === emailVariant) &&
-      (item.type !== "phone" || item.variant === phoneVariant)
+      (item.type !== "phone" || showAllPhones || item.variant === phoneVariant)
     )
     .forEach((item) => {
       if (!dateInserted && data.showDate !== false && item.label && item.label.includes("linkedin.com")) {
