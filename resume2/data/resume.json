@@ -5,12 +5,28 @@
     "summary": "Backend and data platform engineer with 15+ years of experience building scalable APIs, distributed systems, streaming pipelines, and cloud software across retail, media, utilities, and enterprise platforms.",
     "contact": [
       {
+        "type": "email",
+        "variant": "default",
         "label": "abilashgeorgethomas@gmail.com",
         "href": "mailto:abilashgeorgethomas@gmail.com"
       },
       {
+        "type": "email",
+        "variant": "tcs",
+        "label": "abilash.thomas@tcs.com",
+        "href": "mailto:abilash.thomas@tcs.com"
+      },
+      {
+        "type": "phone",
+        "variant": "default",
         "label": "+91 9496339214",
         "href": "tel:+919496339214"
+      },
+      {
+        "type": "phone",
+        "variant": "usa",
+        "label": "+1 925-364-1810",
+        "href": "tel:+19253641810"
       },
       {
         "label": "Kochi, India"

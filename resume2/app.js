@@ -52,14 +52,24 @@ function renderHero(data) {
 
   const contact = el("aside", "hero__contact");
   contact.setAttribute("aria-label", "Contact information");
+  const params = new URLSearchParams(window.location.search);
+  const emailVariant = params.get("email") === "tcs"
+    ? "tcs"
+    : "default";
+  const phoneVariant = params.get("phone") === "usa" ? "usa" : "default";
   let dateInserted = false;
-  data.hero.contact.forEach((item) => {
-    if (!dateInserted && data.showDate !== false && item.label && item.label.includes("linkedin.com")) {
-      contact.appendChild(el("span", "", `Date: ${formatCurrentDate()}`));
-      dateInserted = true;
-    }
-    contact.appendChild(contactLink(item));
-  });
+  data.hero.contact
+    .filter((item) =>
+      (item.type !== "email" || item.variant === emailVariant) &&
+      (item.type !== "phone" || item.variant === phoneVariant)
+    )
+    .forEach((item) => {
+      if (!dateInserted && data.showDate !== false && item.label && item.label.includes("linkedin.com")) {
+        contact.appendChild(el("span", "", `Date: ${formatCurrentDate()}`));
+        dateInserted = true;
+      }
+      contact.appendChild(contactLink(item));
+    });
   if (data.showDate !== false) {
     // If no LinkedIn entry exists, keep the date visible at the end.
     if (!dateInserted) {
